@@ -12,31 +12,32 @@ Create a new component called `BoxWithStyledComponents`. It should feature the s
 
 You can use the following hints as guideline:
 
-- Inside of the `components` folder, create a file `BoxWithStyledComponents.js`.
+[x] Inside of the `components` folder, create a file `BoxWithStyledComponents.js`.
+
 - It should export a function which
-  - accepts a prop `$isBlack` (note the `$` sign)
-  - returns a `div`
-- Inside of the same file, create a styled component called `StyledBox` which styles a `div`.
-  - Inside of the return statement of your function, replace the `div` with `StyledBox`.
-  - Pass the `$isBlack` prop to the `StyledBox` component.
-  - `StyledBox` should have the same styling as the `BoxWithClassName` component.
-  - Check whether the `$isBlack` prop is true and set the correct `background-color` accordingly.
-  - How could you set the styling for the hover effect again?
+  [x] accepts a prop `$isBlack` (note the `$` sign)
+  [x] returns a `div`
+  [x] Inside of the same file, create a styled component called `StyledBox` which styles a `div`.
+  [x] Inside of the return statement of your function, replace the `div` with `StyledBox`.
+  [x] Pass the `$isBlack` prop to the `StyledBox` component.
+  [x] `StyledBox` should have the same styling as the `BoxWithClassName` component.
+  [x] Check whether the `$isBlack` prop is true and set the correct `background-color` accordingly.
+  [x] How could you set the styling for the hover effect again?
 - Switch to `./pages/index.js`:
   - import `BoxWithStyledComponents` and
   - below the two `BoxWithClassName` components, render two `BoxWithStyledComponents`, one green and one black.
 
 ### Bonus: Aligning Boxes Horizontally
 
-Using styled components, can you align the four boxes horizontally by only changing `./pages/index.js`?
+[x] Using styled components, can you align the four boxes horizontally by only changing `./pages/index.js`?
 
-- Hint: Use `display: flex` to achieve this goal.
+Hint: Use `display: flex` to achieve this goal.
 
 ### Bonus: Refactoring
 
 Did you notice you wrote a component `BoxWithStyledComponents` that has only the purpose to return an instance of `StyledBox` and passes props? This is not necessary! Such a wrapping component around a styled component would be required if you would return multiple child elements or would add logic to the component.
 
-Try to refactor the code, so that `BoxWithStyledComponents.js` includes only one component, which is created with `styled-components` and is the default export.
+[x] Try to refactor the code, so that `BoxWithStyledComponents.js` includes only one component, which is created with `styled-components` and is the default export.
 
 ## Notes
 
